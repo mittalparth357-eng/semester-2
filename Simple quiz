@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz App</title>
+</head>
+<body>
+
+<h2>Quiz Application</h2>
+
+<p>What does HTML stand for?</p>
+
+<input type="radio" name="q1" value="a">
+Hyper Text Markup Language<br>
+
+<input type="radio" name="q1" value="b">
+High Text Machine Language<br>
+
+<input type="radio" name="q1" value="c">
+Hyper Tool Markup Language<br><br>
+
+<button onclick="checkAnswer()">
+Submit
+</button>
+
+<p id="result"></p>
+
+<script>
+
+function checkAnswer() {
+
+    let options =
+    document.getElementsByName("q1");
+
+    let answer = "";
+
+    for(let i=0;i<options.length;i++) {
+
+        if(options[i].checked) {
+            answer = options[i].value;
+        }
+    }
+
+    if(answer === "a") {
+        document.getElementById("result").innerHTML =
+        "Correct Answer";
+    }
+    else {
+        document.getElementById("result").innerHTML =
+        "Wrong Answer";
+    }
+}
+</script>
+
+</body>
+</html>
