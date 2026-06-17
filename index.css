@@ -1,5 +1,6 @@
 body { 
-  margin: 0; 
-  font-family: cambria; 
-  background-color: rgb(223, 195, 247); 
-}
+margin: 0; 
+padding: 0; 
+font-family: Arial, sans-serif; 
+background-color: rgb(203, 241, 203); 
+} 
